@@ -1,0 +1,6 @@
+LLM_PROVIDER="huggingface"   # or "local" for fallback behaviour
+PERSIST_DIRECTORY=./today
+DATA_DIRECTORY=./data
+COLLECTION_NAME=testing1
+EMBED_MODEL=all-MiniLM-L6-v2
+HUGGINGFACEHUB_API_TOKEN="your_huggingface_token_here"

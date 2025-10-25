@@ -1,5 +1,4 @@
 # LangChain Core
-langchain
 langchain-core
 
 # Hugging Face Integration
@@ -7,9 +6,17 @@ langchain-huggingface
 transformers
 huggingface-hub
 
-# Environment Variable Management
-python-dotenv
 
-# Machine Learning Utilities
-numpy
-scikit-learn
+streamlit
+langchain
+langchain-community
+sentence-transformers
+chromadb
+python-dotenv
+openai
+tqdm
+PyPDF2
+
+# Document processing (for PyPDFLoader and TextLoader)
+pypdf>=3.17.0
+
