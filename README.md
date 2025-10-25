@@ -4,7 +4,7 @@ GenAI and RAG
 
 **Project structure**
 
-rag-streamlit/
+genai-rag-lab/
 ├─ data/                          # put your PDFs/TXTs here
 ├─ ingest/
 │  ├─ __init__.py
@@ -40,14 +40,13 @@ pip install --upgrade pip
 pip install -r requirements.txt
 </span></span></code></div></div></pre>
 
-3. Copy testenv to `.env` and populate it with HUGGINGFACEHUB_API_TOKEN:
-5. Start Streamlit:
+3. Copy testenv to `.env` at root directory, and populate it with HUGGINGFACEHUB_API_TOKEN:
+4. Start Streamlit:
 
 <pre class="overflow-visible!" data-start="13695" data-end="13730"><div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary"><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>streamlit run ui/app.py
 </span></span></code></div></div></pre>
 
-
 5. Workflow:
 
 * Click **Ingest Documents** (this loads & chunks & builds the Chroma DB in `PERSIST_DIRECTORY`).
-* Ask questions — top-k results will be retrieved and you’ll see an LLM answer (if OpenAI configured) or a grounded excerpt fallback.
+* Ask questions — top-k results will be retrieved and you’ll see an LLM answer or a grounded excerpt fallback.

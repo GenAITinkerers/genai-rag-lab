@@ -101,4 +101,4 @@ if st.button("Get Answer"):
                     st.text(content[:1000] + ("...[truncated]" if len(content) > 1000 else ""))
 
 st.markdown("---")
-st.markdown("Small note: currently generation uses OpenAI (if configured) or a safe fallback that returns grounded excerpts.")
+st.markdown("Small note: currently generation uses Huggingface (if configured) or a safe fallback that returns grounded excerpts.")
