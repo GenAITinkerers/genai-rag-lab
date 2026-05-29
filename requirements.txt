@@ -16,6 +16,7 @@ python-dotenv
 openai
 tqdm
 PyPDF2
+torchvision
 
 # Document processing (for PyPDFLoader and TextLoader)
 pypdf>=3.17.0

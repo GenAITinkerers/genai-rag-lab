@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 LLM_PROVIDER=os.getenv("LLM_PROVIDER","huggingface")
-HF_MODEL = os.getenv("HF_MODEL", "HuggingFaceH4/zephyr-7b-beta")
+HF_MODEL = os.getenv("HF_MODEL", "Qwen/Qwen2.5-7B-Instruct:together")
 HF_TASK = os.getenv("HF_TASK", "text-generation")
 HF_MAX_NEW_TOKENS = int(os.getenv("HF_MAX_NEW_TOKENS", "256"))
 
